@@ -1,5 +1,5 @@
 <?php
-    class Alunno{
+    class Alunno implements JsonSerializable{
         protected $nome;
         protected $cognome;
         protected $eta;
@@ -37,10 +37,18 @@
           }
 
           //funzione per stampare gli attributi
-          function stampaValori($a){
-            echo " NOME: " . $a->get_nome();
-            echo " COGNOME: " . $a->get_cognome();
-            echo " ANNI: " . $a->get_eta() . "<BR><br>";
-          }
+         // function stampaValori($a){
+           // echo " NOME: " . $a->get_nome();
+            //echo " COGNOME: " . $a->get_cognome();
+            //echo " ANNI: " . $a->get_eta() . "<BR><br>";
+          //}
+
+          public function jsonSerialize() {
+            return [
+                'nome' => $this->nome,
+                'cognome' => $this->cognome,
+                'eta' => $this->eta,
+            ];
+        }
     }
 ?>

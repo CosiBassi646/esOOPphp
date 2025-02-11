@@ -5,8 +5,8 @@ require "./Animale.php";
             parent::__construct();
         }
 
-        function verso(){
-            echo "woof woof";
+        parent:: verso(){
+            echo "woof woof"
         }
     }
 ?>

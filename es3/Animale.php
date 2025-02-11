@@ -3,7 +3,6 @@
         function __construct() {
         }
 
-        abstract function verso(){            
-        }
+        abstract function verso();
     }
 ?>
