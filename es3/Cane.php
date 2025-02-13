@@ -1,12 +1,10 @@
 <?php
 require "./Animale.php";
-    class Cane{
-        function __construct() {
-            parent::__construct();
-        }
+    class Cane extends Animale{
 
-        parent:: verso(){
-            echo "woof woof"
+
+        function verso(){
+            echo "woof woof";
         }
     }
 ?>

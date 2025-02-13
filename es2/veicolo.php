@@ -4,7 +4,7 @@
         protected $anno;
 
         function __construct($marca, $anno){ //costruttore
-            $this->marca = $nome;
+            $this->marca = $marca;
             $this->anno = $anno;
           }
 

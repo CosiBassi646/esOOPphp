@@ -1,5 +1,5 @@
 <?php
-    class Animale{
+   abstract class Animale{
         function __construct() {
         }
 
